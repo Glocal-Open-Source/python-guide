@@ -1,0 +1,29 @@
+name: deploy-book
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: pip install jupyter-book
+
+      - name: Build book
+        run: jupyter-book build glocal-python
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: glocal-python/_build/html
+
+      - name: Deploy
+        uses: actions/deploy-pages@v4
