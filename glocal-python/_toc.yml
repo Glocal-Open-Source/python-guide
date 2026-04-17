@@ -1,0 +1,41 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: index
+parts:
+  - caption: "Introduction to Python"
+    chapters:
+      - file: intro/getting-started
+      - file: intro/data-types
+      - file: intro/control-flow
+      - file: intro/example-1-text-analyzer
+      - file: intro/example-2-string-slicing
+      - file: intro/basic-functions
+      - file: intro/example-3-refactoring
+
+  - caption: "Intermediate Python"
+    chapters:
+      - file: intermediate/data-structures
+      - file: intermediate/oop
+      - file: intermediate/file-io
+      - file: intermediate/error-handling
+      - file: intermediate/modules-and-packages
+      - file: intermediate/virtual-environments
+      - file: intermediate/advanced-functions-and-loops
+
+  - caption: "Projects"
+    chapters:
+      - file: projects/picking-a-project
+      - file: projects/project-1-web-scraper
+      - file: projects/project-2-data-analysis
+      - file: projects/project-3-automation
+
+  - caption: "Reference"
+    chapters:
+      - file: cheat-sheets/core-python
+      - file: cheat-sheets/essential-libraries
+
+  - caption: "Essays & Musings"
+    chapters:
+      - file: musings/daniels-laments
