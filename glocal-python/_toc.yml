@@ -35,7 +35,3 @@ parts:
     chapters:
       - file: cheat-sheets/core-python
       - file: cheat-sheets/essential-libraries
-
-  - caption: "Essays & Musings"
-    chapters:
-      - file: musings/daniels-laments
