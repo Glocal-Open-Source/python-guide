@@ -1,5 +1,5 @@
 # Core book builder
-jupyter-book==1.0.4.post1
+jupyter-book<2
 
 # Data analysis & plotting
 matplotlib>=3.10.1,<4.0
